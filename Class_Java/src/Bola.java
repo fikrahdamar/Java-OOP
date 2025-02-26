@@ -6,7 +6,7 @@ public class Bola {
         this.radius = radius;
     }
     public void computeAndSetVolume(){
-        this.volume = (4/3 * Math.PI * radius * radius * radius);
+        this.volume = ((4.0/3) * Math.PI * radius * radius * radius);
     }
     public double getVolume(){
         return volume;
