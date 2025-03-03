@@ -11,12 +11,12 @@ public class LimasSegiEmpat {
         this.sisi = sisi;
         this.tinggi = tinggi;
     }
-    // public void setSisi( int sisi){
-    //     this.sisi = sisi;
-    // }
-    // public void setTinggi ( int tinggi){
-    //     this.tinggi = tinggi;
-    // }
+    public void setSisi( int sisi){
+        this.sisi = sisi;
+    }
+    public void setTinggi ( int tinggi){
+        this.tinggi = tinggi;
+    }
     public void computeAndSetVolume(){
         this.volume = ((1.0/3) * (sisi * sisi * tinggi));
     }

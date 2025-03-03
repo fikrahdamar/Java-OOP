@@ -8,9 +8,9 @@ class Kubus {
     Kubus (int sisi){
         this.sisi = sisi;
     }
-    // public void setSisi(int sisiBaru) {
-    //     this.sisi = sisiBaru;
-    // }
+    public void setSisi(int sisiBaru) {
+        this.sisi = sisiBaru;
+    }
     public void computeAndSetVolume() {
         this.volume = sisi * sisi * sisi;
     }
