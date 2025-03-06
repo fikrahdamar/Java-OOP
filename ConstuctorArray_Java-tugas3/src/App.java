@@ -53,7 +53,6 @@ public class App {
 
 
         System.out.println("======================================");
-        // tabung
         Tabung[] tabungArray = new Tabung[5];
         tabungArray[0] = new Tabung(7, 10);
         tabungArray[1] = new Tabung(14, 5);
@@ -65,11 +64,69 @@ public class App {
             loopTabung.computeAndSetVolume();
         }
 
+        int indexTabung = 0;
+        for (Tabung loopTabung : tabungArray){
+            System.out.println("Volume Tabung ke-" + indexTabung + " adalah : " + loopTabung.getVolume() );
+            indexTabung ++ ;
+        }
+
+        double totalVolumeTabung = 0;
+        for (Tabung loopTabung : tabungArray){
+            totalVolumeTabung += loopTabung.getVolume();
+        }
+        double rataVolumeTabung = totalVolumeTabung / tabungArray.length;
+        System.out.println("Volume rata - rata tabung  : " + rataVolumeTabung + "\n");
+
 
 
         System.out.println("======================================");
-        // limas
+        LimasSegiEmpat[] limasArray = new LimasSegiEmpat[5];
+        limasArray[0] = new LimasSegiEmpat(5, 10);
+        limasArray[1] = new LimasSegiEmpat(8, 7);
+        limasArray[2] = new LimasSegiEmpat(3, 8);
+        limasArray[3] = new LimasSegiEmpat(10, 13);
+        limasArray[4] = new LimasSegiEmpat(8, 6);
+        
+        for (LimasSegiEmpat loopLimas : limasArray){
+            loopLimas.computeAndSetVolume();
+        }
+
+        int indexLimas = 1;
+        for (LimasSegiEmpat loopLimas : limasArray){
+            System.out.println("Volume limas segi empat ke-" + indexLimas + " adalah : " + loopLimas.getVolume() );
+            indexLimas++;
+        }
+
+        double totalVolumeLimas = 0;
+        for (LimasSegiEmpat loopLimas : limasArray){
+            totalVolumeLimas += loopLimas.getVolume();
+        }
+        double rataVolumeLimas = totalVolumeLimas / limasArray.length;
+        System.out.println("Volume rata - rata limas segi empat  : " + rataVolumeLimas + "\n");
+
+
         System.out.println("======================================");
-    //    bola
+        Bola[] bolaArray = new Bola[5];
+        bolaArray[0] = new Bola(7);
+        bolaArray[1] = new Bola(10);
+        bolaArray[2] = new Bola(5);
+        bolaArray[3] = new Bola(9);
+        bolaArray[4] = new Bola(14);
+
+        for (Bola loopBola : bolaArray){
+            loopBola.computeAndSetVolume();
+        }
+        int indexBola = 1;
+        for (Bola loopBola : bolaArray ){
+            System.out.println("Volume Bola ke-" + indexBola + " adalah : " + loopBola.getVolume() );
+            indexBalok++;            
+        }
+
+        double totalVolumeBola = 0;
+        for (Bola loopBola : bolaArray){
+            totalVolumeBola += loopBola.getVolume();
+        }
+        double rataVolumeBola = totalVolumeBola / bolaArray.length;
+        System.out.println("Volume rata - rata bola  : " + rataVolumeBola + "\n");
     }
 }
