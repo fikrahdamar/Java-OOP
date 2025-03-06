@@ -11,12 +11,7 @@ public class Tabung {
         this.radius = radius;
         this.tinggi = tinggi;
     }
-    public void setRadius ( int radius){
-        this.radius = radius;
-    }
-    public void setTinggi ( int tinggi){
-        this.tinggi = tinggi;
-    }
+   
     public void computeAndSetVolume (){
         this.volume = (Math.PI * radius *  radius * tinggi);
     }

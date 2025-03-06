@@ -1,5 +1,32 @@
 public class App {
     public static void main(String[] args) throws Exception {
+
+        Kubus[] kubusArray = new Kubus[5];
+        kubusArray[0] = new Kubus(3);
+        kubusArray[1] = new Kubus(4);
+        kubusArray[2] = new Kubus(5);
+        kubusArray[3] = new Kubus(10);
+        kubusArray[4] = new Kubus(12);
+        
+        kubusArray[0].computeAndSetVolume();
+        kubusArray[1].computeAndSetVolume();
+        kubusArray[2].computeAndSetVolume();
+        kubusArray[3].computeAndSetVolume();
+        kubusArray[4].computeAndSetVolume();
+
+        int index = 0;
+        for (Kubus loopKubus : kubusArray){
+            System.out.println("Volume Kubus ke-" + (index + 1) + " adalah : " + loopKubus.getVolume() );
+            index ++ ;
+        }
+        int totalVolume = 0;
+        for (Kubus loopKubus : kubusArray){
+            totalVolume += loopKubus.getVolume();
+
+        }
+        double rataVolumeKubus = (double) totalVolume / kubusArray.length;
+        System.out.println("Volume Rata - rata kubus  : " + rataVolumeKubus + "\n");
+
         // tanpa constructor
         Kubus kubus1 = new Kubus();
         kubus1.setSisi(10);
