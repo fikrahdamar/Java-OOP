@@ -7,6 +7,7 @@ public class App {
         //display kerja
         System.out.println("\n");
         karyawan1.kerja();
+        karyawan1.kerja(true);
         karyawan2.kerja();
         karyawan3.kerja();
 

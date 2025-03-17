@@ -20,6 +20,13 @@ public class Employee {
     public void kerja(){
         System.out.println(this.nama + " sedang bekerja dirumah sakit selama " + this.jamKerja + " jam.");
     }
+    public void kerja(boolean pemalas){
+        if (pemalas) {
+            System.out.println(this.nama + " sedang bekerja dirumah sakit malas malasan");
+        } else {
+            System.out.println(this.nama + " sedang bekerja dirumah sakit dengan sangat rajin");
+        }
+    }
 
     public double kalkulasiBonus(){
         return gaji * 0.10;
